@@ -1,0 +1,15 @@
+:root {
+	--main-color: ;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+img {
+	width: 40%;
+	height: 80%;
+}
+a {
+	text-decoration: none;
+}

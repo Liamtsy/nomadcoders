@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Label&Input</title>
+	</head>
+	<body>
+		<h1>Create Account</h1>
+		<form>
+			<p>
+				<label for="first_name"> First name</label>
+				<input
+					id="first_name"
+					required
+					placeholder="First Name"
+					type="text"
+				/>
+			</p>
+			<p>
+				<label for="last_name"> Last name</label>
+				<input
+					id="last_name"
+					required
+					placeholder="Last Name"
+					type="text"
+				/>
+			</p>
+			<p>
+				<label for="email"> Email</label>
+				<input id="email" required placeholder="Email" type="email" />
+			</p>
+			<p>
+				<label for="github"> Github </label>
+				<input
+					id="github"
+					required
+					placeholder="Github URL"
+					type="url"
+				/>
+			</p>
+			<p>
+				<label for="user_name"> Username</label>
+				<input
+					id="user_name"
+					required
+					placeholder="Username"
+					type="text"
+				/>
+			</p>
+			<p>
+				<label for="password"> Password </label>
+				<input
+					id="password"
+					required
+					minlength="10"
+					placeholder="Password"
+					type="password"
+				/>
+			</p>
+			<p>
+				<label for="birth_date"> Birth date </label>
+				<input id="birth_date" required type="date" />
+			</p>
+			<p>
+				<label for="happy_state">How happy are you?</label>
+				<input
+					required
+					id="happy_state"
+					type="range"
+					list="tickmarks"
+					step="10"
+				/>
+				<datalist id="tickmarks">
+					<option value="0"></option>
+					<option value="10"></option>
+					<option value="20"></option>
+					<option value="30"></option>
+					<option value="40"></option>
+					<option value="50"></option>
+					<option value="60"></option>
+					<option value="70"></option>
+					<option value="80"></option>
+					<option value="90"></option>
+					<option value="100"></option>
+				</datalist>
+			</p>
+			<p>
+				<label for="fav_color">What is your fav. color?</label>
+				<input required id="fav_color" type="color" />
+			</p>
+			<p>
+				<label for="submit_btn"></label>
+				<input
+					required
+					id="submit_btn"
+					type="submit"
+					value="Create Account"
+				/>
+			</p>
+		</form>
+	</body>
+</html>
