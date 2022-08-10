@@ -15,10 +15,11 @@ function onSubmitBtnClick(event) {
 	paintGreetings(username);
 }
 
-function paintGreetings(username) {
+function paintGreetings(name) {
 	greeting.classList.remove(HIDDEN_CLASSNAME);
-	greeting.innerText = `Welcome, ${savedUsername}!`; // Practice to use this way!!
+	greeting.innerText = `Welcome, ${name}!`; // Practice to use this way!!
 }
+
 loginForm.addEventListener('submit', onSubmitBtnClick);
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
