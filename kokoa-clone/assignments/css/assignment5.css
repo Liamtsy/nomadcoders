@@ -1,36 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 html {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 header {
 	display: flex;
 	align-items: center;
-	position: relative;
-	left: 100px;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
-
+header i {
+	font-size: 25px;
+	margin-right: 130px;
+}
 body {
-	width: 40%;
+	width: 30%;
 	height: 95%;
 	border: 10px solid aquamarine;
 }
-#musicInfo {
+.music {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
+	margin-bottom: 50px;
 }
-#musicBox {
+.music__img {
 	width: 150px;
 	height: 150px;
-	background-color: orange;
 	border: 3px solid black;
-	border-radius: 20px;
+	border-radius: 20%;
+	margin-left: 50px;
+	margin-right: 30px;
 }
-#musicText {
-	font-size: 40px;
+.music__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	font-weight: bold;
+}
+.music__text__title {
+	font-size: 50px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.music__text__artist {
+	font-size: 30px;
+	margin: 0;
+	margin-top: 20px;
+}
+.music__img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20%;
+}
+.btns {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.btn {
+	border: 4px solid black;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	border-width: 3px 3px 8px 3px;
+}
+.btn__play {
+	width: 50%;
+	border-radius: 20%;
+}
+.btn__play i {
+	margin: 10px;
+}
+.btn__plus,
+.btn__heart {
+	width: 10%;
+	border-radius: 50%;
+}
+
+.musiclist {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	gap: 40px;
+}
+.musiclist__img {
+	width: 80px;
+	height: 80px;
+	border: 3px solid black;
+	border-radius: 20%;
+}
+.musiclist__img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20%;
+}
+.musicinfo {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+.musiclist__text {
+	line-height: 10px;
+}
+.musiclist__text__title {
+	font-weight: bold;
+	font-size: 30px;
+}
+.musiclist__text__artist {
+	font-size: 20px;
+	color: grey;
 }

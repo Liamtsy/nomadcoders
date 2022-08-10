@@ -5,7 +5,6 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
-
 .welcome-header {
 	margin: 90px 0px;
 	text-align: center;
@@ -41,4 +40,15 @@ body {
 #login-form input:focus {
 	outline: none;
 	border-color: var(--blue);
+}
+#login-form input[type='submit']:hover {
+	cursor: pointer;
+	background-color: var(--blue);
+}
+#login-form a {
+	text-decoration: none;
+}
+#login-form a:hover {
+	text-decoration: underline;
+	color: var(--blue);
 }

@@ -1,3 +1,4 @@
 # Kokoa clone 2022 version
 
-HTML & CSS are so much fun!
+This is made up only with HTML&CSS.
+This HTML follows BEM rules.
