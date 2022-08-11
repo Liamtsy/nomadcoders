@@ -27,28 +27,34 @@ body {
 	margin: 0px 30px;
 }
 #login-form input {
-	padding: 15px 0px;
+	padding: 20px 0px;
 	border: none;
 	font-size: 16px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	margin-bottom: 25px;
-	transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.5s ease-in-out;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 #login-form input::placeholder {
 	color: rgba(0, 0, 0, 0.4);
 }
 #login-form input:focus {
 	outline: none;
-	border-color: var(--blue);
+	border-bottom: 2px solid var(--blue);
 }
 #login-form input[type='submit']:hover {
 	cursor: pointer;
-	background-color: var(--blue);
+	background-color: rgba(0, 112, 243, 0.8);
+
+	transition: background-color 0.5s ease-in-out;
 }
 #login-form a {
 	text-decoration: none;
+	text-align: center;
+	color: inherit;
+	font-size: 16px;
 }
 #login-form a:hover {
-	text-decoration: underline;
 	color: var(--blue);
 }
