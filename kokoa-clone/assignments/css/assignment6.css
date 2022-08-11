@@ -1,0 +1,300 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Figtree', sans-serif;
+}
+#wrapper {
+	border: 7px solid cornflowerblue;
+	width: 600px;
+	height: 100vh;
+}
+header {
+	background-color: cornflowerblue;
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 20px;
+	color: white;
+	font-size: 30px;
+}
+.search {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+		rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 30px;
+	border-radius: 50px;
+	margin-top: -30px;
+	background-color: white;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.3);
+	margin-bottom: 30px;
+}
+main {
+	width: 100%;
+	height: 77%;
+}
+section {
+	height: 33%;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+h1 {
+	font-size: 30px;
+	margin-left: -310px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.movieoftheday__box {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+.movieoftheday__cover {
+	width: 130px;
+	height: 200px;
+	border: 3px solid cornflowerblue;
+	border-radius: 10px;
+}
+.movieoftheday__cover > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.movieoftheday__informations {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 25px;
+}
+.movieoftheday__informations__texts > h2 {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.movieoftheday__informations__texts > h3 {
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.movieoftheday__informations__stars {
+	color: cornflowerblue;
+}
+.movieoftheday__informations__genre span {
+	padding: 5px 50px;
+	border: 3px solid cornflowerblue;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 20px;
+}
+.movieoftheday__informations__btns {
+	margin-top: -8px;
+}
+.movieoftheday__informations__btns i {
+	padding: 9px 11px;
+	border-radius: 50%;
+	background-color: cornflowerblue;
+	color: white;
+}
+.movieoftheday__informations__btns span {
+	font-size: 15px;
+	font-weight: 500;
+	margin-left: 100px;
+	padding: 8px 60px;
+	background-color: cornflowerblue;
+	color: white;
+	border-radius: 20px;
+}
+.topromance__box {
+	display: flex;
+	gap: 40px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.topromance h1 {
+	margin-left: -330px;
+}
+.topromance__movie__cover {
+	width: 100px;
+	height: 150px;
+	border-radius: 10px;
+	border: 3px solid cornflowerblue;
+	margin-bottom: 5px;
+}
+.topromance__movie__cover img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.topromance__movie__stars {
+	font-size: 12px;
+	color: cornflowerblue;
+}
+.popularactress__box {
+	display: flex;
+	gap: 40px;
+}
+.popularactress__cover {
+	width: 130px;
+	height: 150px;
+	border-radius: 10px;
+	border: 3px solid cornflowerblue;
+}
+.popularactress__cover img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.popularactress__texts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 30px;
+}
+.popularactress__texts h2 {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+.popularactress__texts h3 {
+	font-size: 20px;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
