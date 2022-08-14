@@ -10,6 +10,7 @@ function getClock() {
 // function getClock() {
 // 	clock.innerText = new Date().toLocaleTimeString();
 // }
+
 getClock(); // to get the clock right away when we refresh the page.
 setInterval(getClock, 1000); // to keep calling the clock every second.
 // setTimeout(getClock, 5000);
