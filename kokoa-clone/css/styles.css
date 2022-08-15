@@ -1,60 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import 'reset.css';
-@import 'status-bar.css';
 @import 'variables.css';
+
+/* Components */
+@import 'components/nav-bar.css';
+@import 'components/screen-header.css';
+@import 'components/alt-screen-header.css';
+@import 'components/status-bar.css';
+@import 'components/user-component.css';
+@import 'components/badge.css';
+@import 'components/icon-row.css';
+@import 'components/no-mobile.css';
+/* Screens */
+@import 'screens/more.css';
+@import 'screens/login.css';
+@import 'screens/friends.css';
+@import 'screens/find.css';
+@import 'screens/settings.css';
+@import 'screens/chat.css';
 body {
 	font-family: 'Roboto Condensed', sans-serif;
+	color: #2e363e;
 }
-.welcome-header {
-	margin: 90px 0px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-weight: bold;
-}
-.welcome-header__title {
-	margin-bottom: 40px;
-	font-size: 25px;
-}
-.welcome-header__text {
-	width: 55%;
-	opacity: 0.7;
-}
-#login-form {
-	display: flex;
-	flex-direction: column;
-	margin: 0px 30px;
-}
-#login-form input {
-	padding: 20px 0px;
-	border: none;
-	font-size: 16px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-	margin-bottom: 25px;
-	transition: border-color 0.5s ease-in-out;
-	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-#login-form input::placeholder {
-	color: rgba(0, 0, 0, 0.4);
-}
-#login-form input:focus {
-	outline: none;
-	border-bottom: 2px solid var(--blue);
-}
-#login-form input[type='submit']:hover {
-	cursor: pointer;
-	background-color: rgba(0, 112, 243, 0.8);
-
-	transition: background-color 0.5s ease-in-out;
-}
-#login-form a {
-	text-decoration: none;
-	text-align: center;
-	color: inherit;
-	font-size: 16px;
-}
-#login-form a:hover {
-	color: var(--blue);
+.main-screen {
+	padding: 0px var(--horizontal-space);
 }

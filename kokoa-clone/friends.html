@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kr">
+	<head>
+		<link rel="shortcut icon" href="img/cat.png" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Cocotalk</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="status-bar">
+			<div class="status-bar__column">
+				<span>LG U+</span>
+				<i class="fa-solid fa-wifi"></i>
+			</div>
+			<div class="status-bar__column">
+				<span>00:13</span>
+			</div>
+			<div class="status-bar__column">
+				<span>60%</span>
+				<i class="fa-solid fa-battery-half fa-lg"></i>
+				<i class="fa-solid fa-bolt fa-sm"></i>
+			</div>
+		</div>
+		<header class="screen-header">
+			<h1 class="screen-header__title">Friends</h1>
+			<div class="screen-header__icons">
+				<span><i class="fas fa-search fa-lg"></i></span>
+				<span><i class="fas fa-music fa-lg"></i></span>
+				<span><i class="fas fa-cog fa-lg"></i></span>
+			</div>
+		</header>
+		<a id="friends-display-link">
+			<i class="fas fa-info-circle"></i>
+			Friend's Names Display
+			<i class="fas fa-chevron-right fa-xs"></i>
+		</a>
+		<main class="friends-screen">
+			<div class="user-component">
+				<!-- .user-component__column*2 하면 div 바로 생성 -->
+				<div class="user-component__column">
+					<img src="img/coco.jpg" class="user-component__image" />
+					<div class="user-component__text">
+						<h4 class="user-component__name">Coco</h4>
+						<!-- <h6 class="user-component__status">형아 보고싶어</h6> -->
+					</div>
+				</div>
+				<div class="user-component__column"></div>
+			</div>
+			<div class="friends-screen__channel">
+				<div class="friends-screen__channel-header">
+					<span>Channel</span>
+					<i class="fas fa-chevron-up fa-xs"></i>
+				</div>
+				<div class="user-component">
+					<div class="user-component__column">
+						<img
+							src="https://avatars3.githubusercontent.com/u/3612017"
+							class="user-component__image user-component__image--sm"
+						/>
+						<div class="user-component__text">
+							<h4
+								class="user-component__name user-component__name--not-bold"
+							>
+								Channel
+							</h4>
+						</div>
+					</div>
+					<div class="user-component__column">
+						<div>
+							<span>2</span>
+							<i class="fas fa-chevron-right fa-xs"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- nav>ul>li*4>a 하면 구조 바로 생성-->
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__btn">
+					<a class="navigation__link" href="friends.html">
+						<i class="fa-solid fa-user fa-2x"></i>
+					</a>
+				</li>
+				<li class="navigation_btn">
+					<a class="navigation__link" href="chats.html">
+						<span class="navigation__notification badge">3</span>
+						<i class="fa-regular fa-comment fa-2x"></i>
+					</a>
+				</li>
+				<li class="navigation_btn">
+					<a class="navigation__link" href="find.html"
+						><i class="fas fa-search fa-2x"></i
+					></a>
+				</li>
+				<li class="navigation_btn">
+					<a class="navigation__link" href="more.html">
+						<div class="navigation__update"></div>
+						<i class="fas fa-ellipsis-h fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="splash-screen">
+			<img src="img/cat.png" alt="cat" />
+		</div>
+		<div id="no-mobile">
+			<span>Your screen is too big ㅠㅠ</span>
+		</div>
+		<script
+			src="https://kit.fontawesome.com/0b6b1466e3.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
