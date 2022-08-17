@@ -17,33 +17,21 @@
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script type="text/babel">
 		const root = document.getElementById('root');
-		function Title() {
-			return (
-				<h3
-					id="title"
-					onMouseEnter={() => console.log('mouse enter')}
-				>
-					Hello I'm a title
-				</h3>
-			);
+		let counter = 0;
+		function render() {
+			ReactDOM.render(<App />, root); // showing the component in 17.2 version
+			// ReactDOM.createRoot(root).render(<Container />); // showing the component in 18.2 version
 		}
-		// Arrow function component
-		// ()로 감싸면 return문 포함, {}로 감싸면 return문 제외
-		const Button = () => (
-			<button
-				style={{ backgroundColor: 'aquamarine' }}
-				onClick={() => console.log("I'm clicked!")}
-			>
-				Click me!
-			</button>
-		);
-		const Container = () => (
+		function countUp() {
+			counter++;
+			render();
+		}
+		const App = () => (
 			<div>
-				<Title />
-				<Button />
+				<h3>Total clicks: {counter}</h3>
+				<button onClick={countUp}>Click me</button>
 			</div>
 		);
-		ReactDOM.render(<Container />, root); // showing the component in 17.2 version
-		// ReactDOM.createRoot(root).render(<Container />); // showing the component in 18.2 version
+		render();
 	</script>
 </html>
