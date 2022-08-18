@@ -7,6 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<link rel="stylesheet" href="styles.css" />
 		<title>React Basic</title>
 	</head>
 	<body>
@@ -22,13 +23,20 @@
 			const onChange = (event) => {
 				setAmount(() => event.target.value);
 			};
+			//function onChange(event) {
+			//	setAmount(() => event.target.value);
+			//};
 			const onInverted = () => {
 				setInverted((current) => !current);
 				return setAmount(() => 0);
 			};
+			//function onInverted() {
+			//	setInverted((current) => !current);
+			// 	return setAmount(() => 0);
+			//};
 			return (
 				<div>
-					<h3>Minutes to Hours</h3>
+					<h2>Minutes to Hours</h2>
 					<div>
 						<label htmlFor="minutes">Minutes</label>
 						<input
@@ -36,7 +44,7 @@
 							id="minutes"
 							placeholder="Minutes"
 							type="number"
-							onChange={onChange}
+							onChange={onChange} // everytime the value is changed, the function will be called.
 							disabled={inverted}
 						/>
 					</div>
@@ -47,8 +55,8 @@
 							id="Hours"
 							placeholder="Hours"
 							type="number"
-							disabled={!inverted}
 							onChange={onChange}
+							disabled={!inverted}
 						/>
 					</div>
 					<button onClick={() => setAmount(() => 0)}>Reset</button>
@@ -66,7 +74,7 @@
 			};
 			return (
 				<div>
-					<h3>KM to Miles</h3>
+					<h2>KM to Miles</h2>
 					<div>
 						<label htmlFor="km">Kilometers</label>
 						<input
@@ -111,7 +119,7 @@
 		}
 		function App() {
 			const [index, setIndex] = React.useState('-1');
-			const onSelect = (evnet) => {
+			const onSelect = (event) => {
 				return setIndex(() => event.target.value);
 			};
 			return (
@@ -127,7 +135,9 @@
 						<MinutesToHours />
 					) : index === '1' ? (
 						<KmToMiles />
-					) : null}
+					) : (
+						'please select unit'
+					)}
 				</div>
 			);
 		}

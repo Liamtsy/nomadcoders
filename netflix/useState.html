@@ -16,16 +16,25 @@
 	<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script type="text/babel">
+		const root = document.getElementById('root');
 		function App() {
-			const [counter, setCounter] = React.useState(0);
+			const [counter, setCounter] = React.useState(0); // 이거 구조분해 할당임.
 			//리액트JS에서 데이터를 저장시켜 자동으로 리렌더링을 일으킬 수 있는 방법
 			//const data = React.useState();를 console.log 시키면
 			//[undefined, f ] -> undefined와 함수가 적힌 배열이 나타남
 			//undefined는 data이고 f는 data를 바꿀 때 사용하는 함수
 			//React.useState() 함수는 초기값을 설정할 수 있음
 			//즉, undefined는 초기값이고 두 번째 요소인 f는 그 값을 바꾸는 함수
-
+			//setState()가 실행되면, 새로운 데이터 값과 함께 전체 컴포넌트가 re-created.
 			//useState()가 countUp() 함수를 대신하고 있음.
+
+			// How to use useState with arrow function
+			// const App = () => {
+			// const [counter, modifier] = React.useState(0);
+			// return (
+			// component
+			// );
+			//};
 
 			//보통 배열을 선언할 때 const box = ['pen', 'speaker', 'books'] 이렇게 하지만
 			//이걸 꺼내서 쓰고 싶을 때는 구조 분해 할당을 쓴다. 방법은 그냥 뒤집기만 하면 되는데,
@@ -37,7 +46,7 @@
 			//구조 분해 할당 구문은 배열이나 객체의 속성을 해체하여 그 값을 개별 **변수**에 담을 수 있게 하는 JavaScript 표현식입니다.[MDN]
 			const onClick = () => {
 				// How to set state 2.
-				setCounter((current) => current + 1); //parameter로 함수를 전달. 현재 값 바탕으로 state를 변경하고 싶다면 current를 가져와서 return으로 넘겨줘라.
+				setCounter((current) => current + 1); //parameter로 함수를 전달. current를 인자로 받고, current + 1을 반환하는 함수를 전달.
 				// How to set state 1. -> setCounter(counter + 1); //counter를 증가시키고, 리렌더링을 실행한다. (바뀐 부분만) (컴포넌트가 재생성)
 				// current state와 관련 없는 값을 new state로 하고싶으면 1번
 				// current state에 tiny 변화를 주어 new state 주고싶으면 2번
@@ -51,8 +60,6 @@
 				</div>
 			);
 		}
-
-		const root = document.getElementById('root');
 		ReactDOM.render(<App />, root);
 	</script>
 </html>

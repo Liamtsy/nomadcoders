@@ -23,10 +23,11 @@
 			// ReactDOM.createRoot(root).render(<Container />); // showing the component in 18.2 version
 		}
 		function countUp() {
-			counter++;
-			render();
+			counter = counter + 1;
+			render(); // countUp 호출시마다 render 해야 UI 실시간 변경 가능
 		}
 		const App = () => (
+			// If you wanna use the defined variables or functions, you need to use with {}.
 			<div>
 				<h3>Total clicks: {counter}</h3>
 				<button onClick={countUp}>Click me</button>
