@@ -65,6 +65,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 if (savedToDos !== null) {
 	//if (savedToDos) {}
 	const parsedToDos = JSON.parse(savedToDos); // Make a string to an array.
-	toDos = parsedToDos; // toDos에게 이전 저장된 데이터를 기억하게 하기 위해서 업데이트 해줘여함.
+	toDos = parsedToDos; // toDos에게 이전 저장된 데이터를 기억하게 하기 위해서 업데이트 해줘야함.
 	parsedToDos.forEach(paintToDo);
 }
