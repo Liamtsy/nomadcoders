@@ -1,6 +1,9 @@
 .user-component {
 	justify-content: space-between;
 }
+.user-component__column {
+	width: 100%;
+}
 .user-component,
 .user-component__column:first-child {
 	display: flex;
@@ -49,4 +52,10 @@
 .user-component__time {
 	margin-bottom: 10px;
 	display: block;
+}
+
+.user-component__music {
+	border: 1px solid black;
+	display: flex;
+	width: 100%;
 }

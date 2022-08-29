@@ -23,7 +23,10 @@
 		transform: rotateZ(360deg);
 	}
 }
-
-.screen-header__icons .fa-cog:hover {
+.screen-header__icons i {
+	transition: all 1s ease-in-out;
+}
+.screen-header__icons i:hover {
+	color: var(--blue);
 	animation: rotateCog 1s linear infinite;
 }
