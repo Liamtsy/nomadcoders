@@ -19,7 +19,7 @@ ctx.fill();
 
 // A people
 // arms and torso
-ctx.beginPath();
+ctx.beginPath(); // Call this method when you want to creat a new path.
 ctx.fillRect(800, 300, 20, 100);
 ctx.fillRect(960, 300, 20, 100);
 ctx.fillRect(850, 300, 80, 200);
